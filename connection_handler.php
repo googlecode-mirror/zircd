@@ -291,7 +291,9 @@ case 'oper':
 		{
 			$u_info[$me['sock']]['oper'] = true;
 			send($me, ':' . $config['name'] . ' 381 ' . $me['nick'] . ' :You are now an IRC operator on '.$config['name']);
+			send($me, ':' . $config['name'] . ' 375 ' . $me['nick'] . ' :- ' . $config['name'] . ' IRC Operator Message of the Day -');
 			send($me, ':' . $config['name'] . ' 372 ' . $me['nick'] . ' :- ' . implode("\r\n:" . $config['name'] . ' 372 ' . $me['nick'] . ' :- ', explode($config['line_ending_conf'], $config['motd_oper'])));
+			send($me, ':' . $config['name'] . ' 376 ' . $me['nick'] . ' :End of IRC Operator /MOTD command.');
 			break;
 		}
 	}
