@@ -102,6 +102,10 @@ Please submit any bugs you find in #zircd
 
 #zircd is the main channel on here!";
 
+$config['motd_oper'] = "THIS IS THE IRC OPERATOR MESSAGE OF THE DAY!
+
+Override is currently ONLY through /samode";
+
 ////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //             Arrays (for linking, opering, and the sort)            \\
 ////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
