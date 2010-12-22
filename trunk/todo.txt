@@ -1,0 +1,12 @@
+
+TO DO
+
+FORMAT [done|WIP|not started] [coder] [job]
+
+PRIORITY 		PROGRESS..			CODER..		JOB..
+--------		-------------		-------		------------------------------------|
+HIGH			[not started]		[Niall]		[mySQL stuff]
+HIGH			[not started]		[Niall]		[fix stuff into functions]
+MEDIUM			[not started]		[Niall]		[make stuff log to channel]
+LOW				[not started]		[Niall]		[add P10 stuff]
+
