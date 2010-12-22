@@ -290,11 +290,12 @@ case 'oper':
 		if((isset($config['opers'][$user])) && ($config['opers'][$user] == $pass))
 		{
 			$u_info[$me['sock']]['oper'] = true;
-			send($me, ':' . $config['name'] . ' 381 ' . $me['nick'] . ' :You have entered... the Twilight Zone!');
+			send($me, ':' . $config['name'] . ' 381 ' . $me['nick'] . ' :You are now an IRC operator on '.$config['name']);
+			send($me, ':' . $config['name'] . ' 372 ' . $me['nick'] . ' :- ' . implode("\r\n:" . $config['name'] . ' 372 ' . $me['nick'] . ' :- ', explode($config['line_ending_conf'], $config['motd_oper'])));
 			break;
 		}
 	}
-	send($me, ':' . $config['name'] . ' 491 ' . $me['nick'] . ' :Only few of mere mortals may try to enter the twilight zone');
+	send($me, ':' . $config['name'] . ' 491 ' . $me['nick'] . ' :Incorrect IRC operator details');
 	break;
 
 case 'kill':
